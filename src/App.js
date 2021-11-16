@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './nikhil-kesharwani-VHm_TvKhISU-unsplash.jpg';
+import './style.css';
+import './components/video'
+import video from './How to Draw a Line in Photoshop - YouTube.mkv'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{border:"solid 1px black" , maxWidth:"100vw"}}>
+       <h1 className="title red">Your name here</h1> <br/>
+       <img width="520" height="640" src={logo} alt="src" /> <br/>
+       <img width="620" height="740" src="\levi-stute-mFF39sOZSgM-unsplash.jpg" alt="BigCo Inc. logo"/>
+       <video width="750" height="500" controls >
+      <source src={video} type="video/mkv"/>
+     </video>
+
     </div>
+
+
+
   );
 }
 
